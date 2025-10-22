@@ -1,6 +1,32 @@
 // import { borderColor } from "polished";
 // import { useTheme } from "../components/GlueStackThemeProvider";
 
+export const Colors = {
+	light: {
+		text: "#11181C",
+		background: "#FFFFFF",
+		icon: "#687076",
+		tint: "#0A7EA4",
+		tabIconDefault: "#687076",
+		tabIconSelected: "#0A7EA4",
+	},
+	dark: {
+		text: "#ECEDEE",
+		background: "#151718",
+		icon: "#9BA1A6",
+		tint: "#FFFFFF",
+		tabIconDefault: "#9BA1A6",
+		tabIconSelected: "#FFFFFF",
+	},
+};
+
+export const Fonts = {
+	regular: "ClashGrotesk-Regular",
+	medium: "ClashGrotesk-Medium",
+	semibold: "ClashGrotesk-SemiBold",
+	bold: "ClashGrotesk-Bold",
+};
+
 // Hook to get global design tokens
 export const useTokens = () => {
 	// const { colors } = useTheme();
