@@ -16,7 +16,7 @@ export default function Onboarding2() {
 
   return (
     <SafeAreaView style={[styles.safeArea, { backgroundColor: palette.background }]}>
-      <View style={styles.container}>
+      <View style={[styles.container, { backgroundColor: palette.background }]}>
         <TouchableOpacity
           onPress={() => router.replace("/(tabs)")}
           style={styles.skipButton}
@@ -27,13 +27,13 @@ export default function Onboarding2() {
 
         <View style={styles.content}>
           <Image
-            source={require("../../assets/images/leaderboard.png")}
+            source={require("../../assets/images/second.png")}
             style={styles.image}
             resizeMode="contain"
           />
 
-          <Text style={[styles.title, { color: palette.text }]}>The Ultimate Trivia Challenge</Text>
-          <Text style={[styles.subtitle, { color: palette.text }]}
+          <Text style={[styles.title, { color: palette.tint }]}>The Ultimate Trivia Challenge</Text>
+          <Text style={[styles.subtitle, { color: palette.icon }]}
           >
             Put your knowledge to the test and prove your expertise across a wide range of topics in this engaging game.
           </Text>
@@ -91,8 +91,8 @@ const styles = StyleSheet.create({
     gap: 24,
   },
   image: {
-    width: 260,
-    height: 260,
+    width: 360,
+    height: 360,
   },
   title: {
     fontFamily: Fonts.bold,
