@@ -3,20 +3,20 @@
 
 export const Colors = {
 	light: {
-		text: "#11181C",
-		background: "#FFFFFF",
-		icon: "#687076",
-		tint: "#0A7EA4",
-		tabIconDefault: "#687076",
-		tabIconSelected: "#0A7EA4",
+		text: "#2b1f16",
+		background: "#f5ede2",
+		icon: "#8a7054",
+		tint: "#5b3fc2",
+		tabIconDefault: "#8a7054",
+		tabIconSelected: "#5b3fc2",
 	},
 	dark: {
-		text: "#ECEDEE",
-		background: "#151718",
-		icon: "#9BA1A6",
-		tint: "#FFFFFF",
-		tabIconDefault: "#9BA1A6",
-		tabIconSelected: "#FFFFFF",
+		text: "#2b1f16",
+		background: "#f5ede2",
+		icon: "#8a7054",
+		tint: "#5b3fc2",
+		tabIconDefault: "#8a7054",
+		tabIconSelected: "#5b3fc2",
 	},
 };
 

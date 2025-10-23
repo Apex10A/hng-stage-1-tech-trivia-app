@@ -4,7 +4,7 @@
     "slug": "tech-trivia",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/splash-icon.svg",
+    "icon": "./assets/images/splash-icon.png",
     "scheme": "techtrivia",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -19,18 +19,19 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.apex10a.techtrivia"
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/splash-icon.svg"
+      "favicon": "./assets/images/splash-icon.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.svg",
+          "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff",
@@ -43,6 +44,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "8bbfc47d-5b16-4b69-abb5-347c9830d659"
+      }
     }
   }
 }

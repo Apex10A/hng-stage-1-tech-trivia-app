@@ -16,7 +16,7 @@ export default function Onboarding1() {
 
   return (
     <SafeAreaView style={[styles.safeArea, { backgroundColor: palette.background }]}>
-      <View style={styles.container}>
+      <View style={[styles.container, { backgroundColor: palette.background }]}>
         <TouchableOpacity
           onPress={() => router.replace("/(tabs)")}
           style={styles.skipButton}
@@ -32,8 +32,8 @@ export default function Onboarding1() {
             resizeMode="contain"
           />
 
-          <Text style={[styles.title, { color: palette.text }]}>Welcome to Quizzo!</Text>
-          <Text style={[styles.subtitle, { color: palette.text }]}>
+          <Text style={[styles.title, { color: palette.tint }]}>Welcome to Quizzo!</Text>
+          <Text style={[styles.subtitle, { color: palette.icon }]}>
             Compete with friends, earn points, and climb the leaderboard in this addictive trivia challenge.
           </Text>
         </View>

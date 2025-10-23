@@ -16,7 +16,7 @@ export default function Onboarding3() {
 
   return (
     <SafeAreaView style={[styles.safeArea, { backgroundColor: palette.background }]}>
-      <View style={styles.container}>
+      <View style={[styles.container, { backgroundColor: palette.background }]}>
         <TouchableOpacity
           onPress={() => router.replace("/(tabs)")}
           style={styles.skipButton}
@@ -27,13 +27,13 @@ export default function Onboarding3() {
 
         <View style={styles.content}>
           <Image
-            source={require("../../assets/images/home.png")}
+            source={require("../../assets/images/third.png")}
             style={styles.image}
             resizeMode="contain"
           />
 
-          <Text style={[styles.title, { color: palette.text }]}>Test Your Knowledge with Quizzo</Text>
-          <Text style={[styles.subtitle, { color: palette.text }]}
+          <Text style={[styles.title, { color: palette.tint }]}>Test Your Knowledge with Quizzo</Text>
+          <Text style={[styles.subtitle, { color: palette.icon }]}
           >
             Quizzo is the perfect app to challenge yourself and your friends, with endless trivia fun at your fingertips.
           </Text>
@@ -91,8 +91,8 @@ const styles = StyleSheet.create({
     gap: 24,
   },
   image: {
-    width: 260,
-    height: 260,
+    width: 360,
+    height: 360,
   },
   title: {
     fontFamily: Fonts.bold,
