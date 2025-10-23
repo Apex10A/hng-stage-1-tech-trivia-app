@@ -18,7 +18,7 @@ export default function SplashScreen() {
   return (
     <View style={styles.container}>
       <Image
-        source={require("../assets/images/splash-icon.svg")} // your logo
+        source={require("../assets/images/splash-icon.png")} // your logo
         style={styles.logo}
         resizeMode="contain"
       />
